@@ -10,13 +10,13 @@ int main(int argc, char * argv[]) {
     for (int j = 1; j < argc; j++) { 
         int strlen = 0;
 
-        for (int i = 0; argv[1][i] != '\0'; i++)
+        for (int i = 0; argv[j][i] != '\0'; i++)
             strlen++;
 
         unsigned char * arg = (unsigned char *)calloc(1, strlen + 1);
 
         for (int i = 0; i <= strlen; i++)
-            arg[i] = argv[1][i];
+            arg[i] = argv[j][i];
 
         for (int i = 0; arg[i] != '\0'; i++) {
             if (97 <= arg[i] && arg[i] <= 122) {
