@@ -3,7 +3,7 @@ Implementation of the Caesar Cypher
 
 ## Build
 ```
-$ gcc rot13.c -02 -o rot13
+$ gcc rot13.c -02 -o rot13 -Wall
 ```
 
 ## Run
