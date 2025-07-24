@@ -23,12 +23,12 @@ int main(int argc, char * argv[]) {
                 arg[i] += 13;
         
                 if (arg[i] > 122)
-                  arg[i] -= 26;
+                    arg[i] -= 26;
             } else if (65 <= arg[i] && arg[i] <= 90) {
                 arg[i] += 13;
 
                 if (arg[i] > 90)
-                  arg[i] -= 26;
+                    arg[i] -= 26;
             }
 
             putchar(arg[i]);
@@ -39,5 +39,5 @@ int main(int argc, char * argv[]) {
         free(arg);
     }
 
-  putchar('\n');
+    putchar('\n');
 }
